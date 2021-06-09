@@ -23,3 +23,14 @@ class AddTagActivity: AppCompatActivity() {
         supportActionBar?.setHomeButtonEnabled(true)
 
     }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.add_tag_action_bar, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
+        if (item.itemId == R.id.cancel_tag_button) {
+            val intent = Intent(this, VIewTagActivity::class.java)
+            startActivityForResult(intent, 20)
+        }
