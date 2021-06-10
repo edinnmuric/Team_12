@@ -38,6 +38,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/blue"
+            android:textColor="@color/white"
             app:checkedIcon="@drawable/ic_baseline_check_24"
             app:chipBackgroundColor="@color/light_blue"/>
 
@@ -47,6 +48,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/green"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/green"/>
 
         <com.google.android.material.chip.Chip
@@ -54,6 +56,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/red"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/red"/>
 
         <com.google.android.material.chip.Chip
@@ -61,6 +64,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/yellow"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/yellow"/>
 
         <com.google.android.material.chip.Chip
@@ -68,6 +72,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/purple"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/purple_200"/>
 
         <com.google.android.material.chip.Chip
@@ -75,6 +80,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/grey"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/material_on_surface_emphasis_medium"/>
 
         <com.google.android.material.chip.Chip
@@ -82,6 +88,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/teal"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/teal_700"/>
 
         <com.google.android.material.chip.Chip
@@ -89,6 +96,7 @@
             android:layout_width="82dp"
             android:layout_height="wrap_content"
             android:text="@string/black"
+            android:textColor="@color/white"
             app:chipBackgroundColor="@color/material_on_background_emphasis_high_type"/>
     </com.google.android.material.chip.ChipGroup>
 

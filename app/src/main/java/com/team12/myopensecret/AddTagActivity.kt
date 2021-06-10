@@ -54,6 +54,26 @@ class AddTagActivity: AppCompatActivity() {
             if(chips?.text == "blue") {
                 color = "#008080"
             }
+            if(chips?.text == "green") {
+                color = "#607D3B"
+            }
+            if(chips?.text == "red") {
+                color = "#FF0000"
+            }
+            if(chips?.text == "yellow") {
+                color = "#FFF200"
+            }
+            if(chips?.text == "purple") {
+                color = "#AF77D5"
+            }
+            if(chips?.text == "grey") {
+                color = "#555555"
+            }if(chips?.text == "teal") {
+                color = "#007788"
+            }
+            if(chips?.text == "black") {
+                color = "#000000"
+            }
 
 
             dataBase.addLabelEntry(LabelData(tagName,color, -1))
