@@ -6,12 +6,15 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.chip.Chip
+import com.google.android.material.chip.ChipGroup
 
 class AddTagActivity: AppCompatActivity() {
 
     companion object {
         lateinit var dataBase: DataBaseHelper
     }
+    private lateinit var chipsGroup: ChipGroup
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +22,15 @@ class AddTagActivity: AppCompatActivity() {
         setContentView(R.layout.add_new_tag)
         setTitle(R.string.new_tag)
 
-        dataBase = DataBaseHelper(this)
+        dataBase =  DataBaseHelper(this)
         supportActionBar?.setHomeButtonEnabled(true)
+
+        val chip = Chip(this)
+        chip.isClickable = true
+        chip.isCheckable = true
+        chip.isFocusable = true
+        chip.isCloseIconVisible = true
+        chipsGroup = findViewById(R.id.chips_view)
 
     }
 
@@ -36,14 +46,18 @@ class AddTagActivity: AppCompatActivity() {
             startActivityForResult(intent, 20)
         }
 
-        if (item.itemId == R.id.add_tag_button) {
+        if(item.itemId == R.id.add_tag_button) {
             val name = findViewById<EditText>(R.id.new_tag_name)
             val tagName = name.getText().toString()
-            dataBase.addLabelEntry(LabelData(tagName, "#0000ff", -1))
+
+
+            dataBase.addLabelEntry(LabelData(tagName,"#0000ff", -1))
             val intent = Intent(this, VIewTagActivity::class.java)
             startActivityForResult(intent, 20)
         }
 
         return super.onOptionsItemSelected(item)
     }
+
+
 }

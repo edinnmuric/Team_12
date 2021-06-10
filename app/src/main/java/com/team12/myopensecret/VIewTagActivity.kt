@@ -59,6 +59,7 @@ class VIewTagActivity : AppCompatActivity() {
             addLabel(label)
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.view_tag_action_bar, menu)
         return super.onCreateOptionsMenu(menu)
@@ -67,12 +68,14 @@ class VIewTagActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if (item.itemId == R.id.add_tag) {
-            val intent = Intent(this, AddTagActivity::class.java)
+            val intent = Intent(this, AddTagActivity2::class.java)
             startActivityForResult(intent, 20)
         }
 
         return super.onOptionsItemSelected(item)
     }
+
+
 
     override fun onSupportNavigateUp(): Boolean {
         if (this.drawerLayout.isDrawerOpen(GravityCompat.START)) {
