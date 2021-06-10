@@ -22,6 +22,7 @@ class AddTagActivity: AppCompatActivity() {
         setContentView(R.layout.add_new_tag)
         setTitle(R.string.new_tag)
 
+
         dataBase =  DataBaseHelper(this)
         supportActionBar?.setHomeButtonEnabled(true)
 
@@ -49,31 +50,16 @@ class AddTagActivity: AppCompatActivity() {
         if(item.itemId == R.id.add_tag_button) {
             val name = findViewById<EditText>(R.id.new_tag_name)
             val tagName = name.getText().toString()
+                if (tagName.length = 0) {
+                    titleField.error = resources.getString(R.string.need5chars)
+                    hasError = true
+                }
             var color = "#FF0000"
             val chips: Chip? = findViewById(chipsGroup.checkedChipId)
             if(chips?.text == "blue") {
                 color = "#008080"
             }
-            if(chips?.text == "green") {
-                color = "#607D3B"
-            }
-            if(chips?.text == "red") {
-                color = "#FF0000"
-            }
-            if(chips?.text == "yellow") {
-                color = "#FFF200"
-            }
-            if(chips?.text == "purple") {
-                color = "#AF77D5"
-            }
-            if(chips?.text == "grey") {
-                color = "#555555"
-            }if(chips?.text == "teal") {
-                color = "#007788"
-            }
-            if(chips?.text == "black") {
-                color = "#000000"
-            }
+
 
 
             dataBase.addLabelEntry(LabelData(tagName,color, -1))
