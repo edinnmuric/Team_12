@@ -49,9 +49,14 @@ class AddTagActivity: AppCompatActivity() {
         if(item.itemId == R.id.add_tag_button) {
             val name = findViewById<EditText>(R.id.new_tag_name)
             val tagName = name.getText().toString()
+            var color = "#FF0000"
+            val chips: Chip? = findViewById(chipsGroup.checkedChipId)
+            if(chips?.text == "blue") {
+                color = "#008080"
+            }
 
 
-            dataBase.addLabelEntry(LabelData(tagName,"#0000ff", -1))
+            dataBase.addLabelEntry(LabelData(tagName,color, -1))
             val intent = Intent(this, VIewTagActivity::class.java)
             startActivityForResult(intent, 20)
         }
