@@ -25,6 +25,8 @@
     <string name="df_name">Data Field Name</string>
     <string name="choose_tag">Choose Tag</string>
     <string name="all_option">Every Tag</string>
+    <string name="tag_name">Name</string>
+    <string name="new_tag">New Tag</string>
     <string-array name="languages_array">
         <item>English</item>
         <item>русский</item>

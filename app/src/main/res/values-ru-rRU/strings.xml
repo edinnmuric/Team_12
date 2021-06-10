@@ -26,6 +26,8 @@
     <string name="df_name">эт добить эт</string>
     <string name="choose_tag">добить добить</string>
     <string name="all_option">эту Удалить</string>
+    <string name="tag_name">Имя</string>
+    <string name="new_tag">Новый тег</string>
     <string-array name="languages_array">
         <item>English</item>
         <item>русский</item>
