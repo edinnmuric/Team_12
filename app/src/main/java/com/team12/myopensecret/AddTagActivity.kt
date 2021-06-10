@@ -6,8 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.chip.Chip
-import com.google.android.material.chip.ChipGroup
+
 
 class AddTagActivity: AppCompatActivity() {
 
@@ -22,17 +21,6 @@ class AddTagActivity: AppCompatActivity() {
         setContentView(R.layout.add_new_tag)
         setTitle(R.string.new_tag)
 
-        dataBase =  DataBaseHelper(this)
-        supportActionBar?.setHomeButtonEnabled(true)
-
-        val chip = Chip(this)
-        chip.isClickable = true
-        chip.isCheckable = true
-        chip.isFocusable = true
-        chip.isCloseIconVisible = true
-        chipsGroup = findViewById(R.id.chips_view)
-
-    }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.add_tag_action_bar, menu)

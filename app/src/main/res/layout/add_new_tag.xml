@@ -7,81 +7,76 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent">
 
-  <EditText
-      android:id="@+id/new_tag_name"
-      android:layout_width="match_parent"
-      android:layout_height="60dp"
-      android:layout_marginStart="16dp"
-      android:layout_marginTop="32dp"
-      android:layout_marginEnd="16dp"
-      android:background="@drawable/custom_edit_text"
-      android:drawableStart="@drawable/selector_title"
-      android:drawablePadding="12dp"
-      android:maxLength="60"
-      android:hint="@string/tag_name"
-      android:paddingStart="12dp"
-      android:paddingEnd="12dp" />
+    <EditText
+        android:id="@+id/new_tag_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/selector_title"
+        android:drawablePadding="12dp"
+        android:maxLength="60"
+        android:hint="@string/tag_name"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp" />
 
-  <com.google.android.material.chip.ChipGroup
-      android:id="@+id/chips_view"
-      style="@style/Widget.MaterialComponents.Chip.Choice"
-      android:layout_width="353dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp"
-      android:layout_gravity="center"
-      app:singleSelection="true"
-      app:selectionRequired="true"
-      app:checkedIcon="@drawable/ic_baseline_check_24">
-
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip1"
-        android:layout_width="82dp"
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chips_view"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="353dp"
         android:layout_height="wrap_content"
-        app:checkedIcon="@drawable/ic_baseline_check_24"
-        app:chipBackgroundColor="@color/light_blue"/>
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedIcon="@drawable/ic_baseline_check_24">
+
+       
 
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip2"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/green"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/green"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip3"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/red"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/red"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip4"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/yellow"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/yellow"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip5"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/purple_200"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/purple_200"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip6"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/material_on_surface_emphasis_medium"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip6"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/material_on_surface_emphasis_medium"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip7"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/teal_700"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip7"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/teal_700"/>
 
-    <com.google.android.material.chip.Chip
-        android:id="@+id/chip8"
-        android:layout_width="82dp"
-        android:layout_height="wrap_content"
-        app:chipBackgroundColor="@color/material_on_background_emphasis_high_type"/>
-  </com.google.android.material.chip.ChipGroup>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip8"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:chipBackgroundColor="@color/material_on_background_emphasis_high_type"/>
+    </com.google.android.material.chip.ChipGroup>
 
 </LinearLayout>

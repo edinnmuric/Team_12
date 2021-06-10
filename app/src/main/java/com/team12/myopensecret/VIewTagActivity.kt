@@ -68,7 +68,7 @@ class VIewTagActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
 
         if (item.itemId == R.id.add_tag) {
-            val intent = Intent(this, AddTagActivity2::class.java)
+            val intent = Intent(this, AddTagActivity::class.java)
             startActivityForResult(intent, 20)
         }
 
