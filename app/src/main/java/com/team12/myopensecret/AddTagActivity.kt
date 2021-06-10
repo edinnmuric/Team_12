@@ -23,6 +23,7 @@ class AddTagActivity: AppCompatActivity() {
         supportActionBar?.setHomeButtonEnabled(true)
 
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.add_tag_action_bar, menu)
         return super.onCreateOptionsMenu(menu)
@@ -34,3 +35,14 @@ class AddTagActivity: AppCompatActivity() {
             val intent = Intent(this, VIewTagActivity::class.java)
             startActivityForResult(intent, 20)
         }
+
+        if(item.itemId == R.id.add_tag_button) {
+            val name = findViewById<EditText>(R.id.new_tag_name)
+            val tagName = name.getText().toString()
+            dataBase.addLabelEntry(LabelData(tagName,"#0000ff", -1))
+            val intent = Intent(this, VIewTagActivity::class.java)
+            startActivityForResult(intent, 20)
+        }
+
+        return super.onOptionsItemSelected(item)
+    }
