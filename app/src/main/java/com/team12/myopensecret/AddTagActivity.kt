@@ -50,15 +50,7 @@ class AddTagActivity: AppCompatActivity() {
         if(item.itemId == R.id.add_tag_button) {
             val name = findViewById<EditText>(R.id.new_tag_name)
             val tagName = name.getText().toString()
-                if (tagName.length = 0) {
-                    titleField.error = resources.getString(R.string.need5chars)
-                    hasError = true
-                }
             var color = "#FF0000"
-            val chips: Chip? = findViewById(chipsGroup.checkedChipId)
-            if(chips?.text == "blue") {
-                color = "#008080"
-            }
 
 
 
