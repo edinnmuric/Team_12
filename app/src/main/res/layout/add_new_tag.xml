@@ -33,7 +33,12 @@
         app:selectionRequired="true"
         app:checkedIcon="@drawable/ic_baseline_check_24">
 
-       
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            app:checkedIcon="@drawable/ic_baseline_check_24"
+            app:chipBackgroundColor="@color/light_blue"/>
 
 
         <com.google.android.material.chip.Chip
