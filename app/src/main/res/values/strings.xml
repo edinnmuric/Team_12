@@ -27,6 +27,14 @@
     <string name="all_option">Every Tag</string>
     <string name="tag_name">Name</string>
     <string name="new_tag">New Tag</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="red">Red</string>
+    <string name="yellow">Yellow</string>
+    <string name="purple">Purple</string>
+    <string name="black">Black</string>
+    <string name="grey">Grey</string>
+    <string name="teal">Teal</string>
     <string-array name="languages_array">
         <item>English</item>
         <item>русский</item>

@@ -37,6 +37,7 @@
             android:id="@+id/chip1"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/blue"
             app:checkedIcon="@drawable/ic_baseline_check_24"
             app:chipBackgroundColor="@color/light_blue"/>
 
@@ -45,42 +46,49 @@
             android:id="@+id/chip2"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/green"
             app:chipBackgroundColor="@color/green"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip3"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/red"
             app:chipBackgroundColor="@color/red"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip4"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/yellow"
             app:chipBackgroundColor="@color/yellow"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip5"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/purple"
             app:chipBackgroundColor="@color/purple_200"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip6"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/grey"
             app:chipBackgroundColor="@color/material_on_surface_emphasis_medium"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip7"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/teal"
             app:chipBackgroundColor="@color/teal_700"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip8"
             android:layout_width="82dp"
             android:layout_height="wrap_content"
+            android:text="@string/black"
             app:chipBackgroundColor="@color/material_on_background_emphasis_high_type"/>
     </com.google.android.material.chip.ChipGroup>
 
